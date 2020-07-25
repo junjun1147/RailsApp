@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soccerlabo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <sqript src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></sqript>
+    <%= javascript_include_tag 'application'%>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+ 
+ <body clss="is-slide" id="page-animate">
+    <header>
+      <div class="header-logo">
+        <%= link_to("SaccerLabo", "/") %>
+      </div>
+      <ul class="header-menus">
+        <li> 
+          <i class="material-icons">sports_soccer</i> 
+          <%= link_to("どんなサイト？", "/about")  %>
+        </li>
+        <li>
+          <i class="material-icons">format_list_bulleted</i>
+          <%= link_to("カテゴリー", "/category") %>
+        </li>
+      </ul>
+      
+    </header>
+    
+    <% if flash[:notice] %>
+      <div class="flash">
+        <%= flash[:notice] %>
+      </div>
+    <% end %>
+    
+    <%= yield %>
+    <sqript src="test.js"></sqript>
+  </body>
+</html>

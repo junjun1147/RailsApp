@@ -1,0 +1,16 @@
+<div class="main foots-show">
+  <div class="container">
+    <div class="foots-show-item">
+      <p>
+        <%= @foot.content %>
+      </p>
+      <div class="foot-time">
+        <%= @foot.created_at.to_s(:datetime_jp)%>
+      </div>
+      <div class="foot-menus">
+        <%= link_to("編集","/foots/#{@foot.id}/edit") %>
+        <%= button_to("削除","/foots/#{@foot.id}",{method: "delete"}) %>
+      </div>
+    </div>
+  </div>
+</div>

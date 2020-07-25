@@ -1,0 +1,16 @@
+<div class="main balls-show">
+  <div class="container">
+    <div class="balls-show-item">
+      <p>
+        <%= @ball.content %>
+      </p>
+      <div class="ball-time">
+        <%= @ball.created_at.to_s(:datetime_jp)%>
+      </div>
+      <div class="ball-menus">
+        <%= link_to("編集","/balls/#{@ball.id}/edit") %>
+        <%= button_to("削除","/balls/#{@ball.id}",{method: "delete"}) %>
+      </div>
+    </div>
+  </div>
+</div>

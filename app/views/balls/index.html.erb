@@ -1,0 +1,10 @@
+<div class="main balls-index">
+  <div class="container">
+    <h1>カテゴリー3</h1>
+    <% @balls.each do |ball| %>
+      <div class="balls-index-item">
+        <%= link_to(ball.content, "/balls/#{ball.id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>

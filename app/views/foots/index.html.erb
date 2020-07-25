@@ -1,0 +1,10 @@
+<div class="main posts-index">
+  <div class="container">
+    <h1>カテゴリー2</h1>
+    <% @foots.each do |foot| %>
+      <div class="posts-index-item">
+        <%= link_to(foot.content, "/foots/#{foot.id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>

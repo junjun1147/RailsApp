@@ -1,0 +1,60 @@
+/* balls/index ================================ */
+.balls-index-item {
+  padding: 20px 30px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+}
+
+/* balls/show ================================ */
+.balls-show form {
+  display: inline;
+}
+
+.balls-show-item {
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 2px 6px #c1ced7;
+  overflow: hidden;
+}
+
+
+.balls-show-item .ball-user-name a {
+  vertical-align: middle;
+  font-size: 24px;
+  margin-left: 15px;
+}
+
+.balls-show-item p {
+  font-size: 24px;
+  margin: 20px 0;
+}
+
+.ball-time {
+  color: #8899a6;
+  margin-bottom: 10px;
+}
+
+.ball-menus {
+  float: right;
+}
+
+.ball-menus a, .ball-menus input {
+  color: #8899a6;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* posts/new ================================ */
+.balls-new textarea {
+  font-size: 20px;
+  padding: 10px;
+  min-height: 140px;
+  border: 1px solid rgb(216, 218, 223);
+  resize: none;
+}
+
+.balls-new textarea::-webkit-input-placeholder {
+  font-size: 24px;
+  opacity: 0.5;
+}
